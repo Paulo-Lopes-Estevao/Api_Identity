@@ -1,5 +1,5 @@
-from Nzimbupay.services.http_api.http_service import http
-import Nzimbupay.services.http_api.point_url as url
+from services.http_api.http_service import http
+import services.http_api.point_url as url
 
 class bi_service():
 
