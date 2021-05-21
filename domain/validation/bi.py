@@ -1,12 +1,14 @@
-from .validators.validate import ValidateInterface
-import re
+from .rules.valid import Rule
 
-class Bi(ValidateInterface):
-    
+class Bi():
+
+    __validate_bi = None
+
+    def __init__(self):
+        self.__validate_bi = Rule()
+
     def rules(self,value):
-        pattern = re.compile(r'^\d{9}[A-Z]{2}\d{3}$')
-        search_pattern =pattern.search(value)
-        return search_pattern.group()
-
+        self.__validate_bi.rules(value)
+    
     def message(self):
-        return "BI inválido"
+        pass
