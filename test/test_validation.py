@@ -1,6 +1,5 @@
 import unittest
 from domain.validation.bi import Bi
-from domain.validation.iban import Iban
 from services.http_api.gov.bi import bi_service
 from services.http_api.gov.nif import nif_service
 import json
