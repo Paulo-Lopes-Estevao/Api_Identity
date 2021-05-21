@@ -2,12 +2,10 @@ import unittest
 from domain.validation.bi import Bi
 from services.http_api.gov.bi import bi_service
 from services.http_api.gov.nif import nif_service
-import json
 
 
 
 class ValidatePerson(unittest.TestCase):
-     #"https://desenvolvimento.gov.ao/dev.api/bi/?bi=006989589LA042"
 
      def test_BI(self):
          tes_bi = Bi()
