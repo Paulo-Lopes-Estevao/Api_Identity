@@ -8,7 +8,7 @@ class Bi():
         self.__validate_bi = Rule()
 
     def rules(self,value):
-        self.__validate_bi.rules(value)
+        return self.__validate_bi.rules(value)
     
     def message(self):
         pass
