@@ -9,7 +9,7 @@ class Nif():
          self.__validate_nif = Rule()
 
      def rules(self,value):
-            self.__validate_nif.rules(value)
+            return self.__validate_nif.rules(value)
 
      def message(self):
          pass
