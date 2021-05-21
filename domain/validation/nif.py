@@ -1,4 +1,4 @@
-from .bi import Bi
+from .rules.valid import Rule
 
 
 class Nif():
@@ -6,7 +6,7 @@ class Nif():
      __validate_nif = None
 
      def __init__(self):
-         self.__validate_nif = Bi()
+         self.__validate_nif = Rule()
 
      def rules(self,value):
             self.__validate_nif.rules(value)
