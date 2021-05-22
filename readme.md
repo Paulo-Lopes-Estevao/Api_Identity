@@ -109,3 +109,9 @@ Midia Social: {
 </td>
 </tr>
 </table>
+
+<br>
+<br>
+
+## **DOCS Swagger UI**
+https://ka6xhw.deta.dev/docs
