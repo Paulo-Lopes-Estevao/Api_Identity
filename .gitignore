@@ -8,7 +8,7 @@ services
 __pycache__
 *.py[cod]
 *$py.class
-
+main
 
 # C extensions
 *.so
