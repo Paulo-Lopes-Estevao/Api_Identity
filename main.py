@@ -13,7 +13,7 @@ def instance_bi(bi):
     verify_validation = valid_bi.rules(bi)
     if verify_validation is not False:
         verify_service = service_bi.verification_bi(bi)
-        return bool(verify_service)
+        return verify_service
 
 
 def instance_nif(nif):
