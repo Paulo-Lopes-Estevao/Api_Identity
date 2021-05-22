@@ -27,7 +27,21 @@ def instance_nif(nif):
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {
+        "Name": "Paulo Lopes Estevão",
+        "Developer": "Back-End Developer",
+        "Repository": "https://github.com/Paulo-Lopes-Estevao/Api_Identity",
+        "Midia Social":{
+            "Github":"https://github.com/Paulo-Lopes-Estevao",
+            "Facebook":"https://facebook.com/paulodoposter.poster.1",
+            "Linkedin":"https://www.linkedin.com/in/paulo-lopes-estev%C3%A3o-7a70881b4/",
+            "Telegram":"https://t.me/Paulo_LopesEstevao"
+    },
+
+
+    }
+
+
 
 @app.get("/bi/{bi}")
 def read_bi(bi : str):
