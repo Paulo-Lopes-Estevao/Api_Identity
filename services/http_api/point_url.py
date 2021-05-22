@@ -1,2 +1,2 @@
 def endPointGov():
-    return "https://desenvolvimento.gov.ao/dev.api"
+    return "https://ka6xhw.deta.dev"
