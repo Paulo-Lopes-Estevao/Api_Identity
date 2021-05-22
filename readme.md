@@ -115,3 +115,5 @@ Midia Social: {
 
 ## **DOCS Swagger UI**
 > https://ka6xhw.deta.dev/docs
+
+> https://ka6xhw.deta.dev/redoc
