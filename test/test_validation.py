@@ -9,7 +9,8 @@ class ValidatePerson(unittest.TestCase):
 
      def test_BI(self):
          tes_bi = Bi()
-         vald = tes_bi.rules("06153280LA047")
+         vald = tes_bi.rules("06153280A047")
+         print(vald)
          self.assertTrue(vald)
 
      def test_BI_service(self):
