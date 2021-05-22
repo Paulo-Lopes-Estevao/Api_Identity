@@ -10,12 +10,12 @@ class ValidatePerson(unittest.TestCase):
      def test_BI(self):
          tes_bi = Bi()
          vald = tes_bi.rules("06153280LA047")
-         print(vald)
          self.assertTrue(vald)
 
      def test_BI_service(self):
          test_servi = bi_service()
          test_servi.verification_bi("006153280LA047")
+         print(test_servi)
          self.assertTrue(test_servi)
 
 
