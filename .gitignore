@@ -1,7 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 \__pycache__/
-services/point_url.py
+services/http_api/point_url.py
 *.py[cod]
 *$py.class
 __pycache__
