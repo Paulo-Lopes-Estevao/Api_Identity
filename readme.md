@@ -56,7 +56,27 @@ Midia Social: {
 
 ```json
 {
-    True
+    "ID_NUMBER": "",
+    "FIRST_NAME":"",
+    "LAST_NAME": "",
+    "GENDER_NAME":"",
+    "BIRTH_DATE": "",
+    "FATHER_FIRST_NAME":"",
+    "FATHER_LAST_NAME": "",
+    "MOTHER_FIRST_NAME":"",
+    "MOTHER_LAST_NAME": "",
+    "MARITAL_STATUS_NAME": "",
+    "BIRTH_PROVINCE_NAME": "",
+    "BIRTH_MUNICIPALITY_NAME": "",
+    "ISSUE_DATE": "",
+    "EXPIRY_DATE":"",
+    "ISSUE_PLACE":"",
+    "RESIDENCE_COUNTRY_NAME": "",
+    "RESIDENCE_PROVINCE_NAME":"",
+    "RESIDENCE_MUNICIPALITY_NAME": "",
+    "RESIDENCE_COMMUNE_NAME": "",
+    "RESIDENCE_NEIGHBOR":"",
+    "RESIDENCE_ADDRESS": "",
 }
 
 ```
