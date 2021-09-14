@@ -1,6 +1,6 @@
 from services.http_api.http_service import http
 import services.http_api.point_url as url
-from .bi import bi_service
+from services.http_api.gov.bi import bi_service
 
 
 class nif_service():
