@@ -1,15 +1,12 @@
-from .rules.valid import Rule
+from domain.validation.rules.valid import Rule
 
 
 class Nif():
+    def __init__(self):
+        self.__validate_nif = Rule()
 
-     __validate_nif = None
+    def rules(self,value):
+        return self.__validate_nif.rules(value)
 
-     def __init__(self):
-         self.__validate_nif = Rule()
-
-     def rules(self,value):
-            return self.__validate_nif.rules(value)
-
-     def message(self):
-         pass
+    def message(self):
+        pass
