@@ -2,22 +2,15 @@ import abc
 import requests
 
 class http(abc.ABC):
-
-    __url = None
-
     def __init__(self):
-        pass
+        self.__url = None
 
-    def api(self,url):
-
+    def api(self, url):
         url_api = self.__url = requests.get(url)
-
         try:
-
             url_api.raise_for_status()
-
         except Exception as e:
-            print("erro : %s" % (e))
+            print(f"erro : {e}")
 
 
     def response(self):

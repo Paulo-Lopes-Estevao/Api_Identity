@@ -3,7 +3,7 @@ import abc
 
 class ValidateInterface(abc.ABC):
 
-    def rules(self,value):
+    def rules(self, value):
         """
         Determine if the validation rule passes.
 

@@ -1,23 +1,32 @@
 # API Indentifacação do BI e NIF
 
-## EndPoint : 
+## EndPoints
 
-### **Default**
+### **Root**
 
 - default (Read the first observation on top of this doc)
 
-|Method|Endpoint        |
-|------|----------------|
-|`GET` |`https://ka6xhw.deta.dev`|
+| Method | Endpoint |
+| :---: | :---: |
+| `GET` | `https://ka6xhw.deta.dev/` |
 
-<br>
+`Response`
 
-<table>
-<tr>
-<th>Response</th>
-</tr>
-<tr>
-<td>
+```json
+{
+    "Validate BI": "https://ka6xhw.deta.dev/bi/{bi}",
+    "Validate NIF": "https://ka6xhw.deta.dev/nif/{nif}",
+    "Details about maintainer": "https://ka6xhw.deta.dev/about/" 
+    }
+```
+
+### **About**
+
+| Method | Endpoint |
+| :---: | :---: |
+| `GET` | `https://ka6xhw.deta.dev/about/` |
+
+`Response`
 
 ```json
 {
@@ -32,108 +41,72 @@ Midia Social: {
 }
 }
 ```
-</td>
-</tr>
-</table>
 
 ### **BI**
 
-- 
+| Method | Endpoint |
+| :---: | :---: |
+| `GET` | `https://ka6xhw.deta.dev/bi/{bi}` |
 
-|Method|Endpoint        |
-|------|----------------|
-|`GET` |`https://ka6xhw.deta.dev/bi/{bi}`|
-
-<br>
-
-<table>
-<tr>
-<th>On Success</th>
-<th>On Error</th>
-</tr>
-<tr>
-<td>
+`On Success`
 
 ```json
 {
     "ID_NUMBER": "",
-    "FIRST_NAME":"",
+    "FIRST_NAME": "",
     "LAST_NAME": "",
-    "GENDER_NAME":"",
+    "GENDER_NAME": "",
     "BIRTH_DATE": "",
-    "FATHER_FIRST_NAME":"",
+    "FATHER_FIRST_NAME": "",
     "FATHER_LAST_NAME": "",
-    "MOTHER_FIRST_NAME":"",
+    "MOTHER_FIRST_NAME": "",
     "MOTHER_LAST_NAME": "",
     "MARITAL_STATUS_NAME": "",
     "BIRTH_PROVINCE_NAME": "",
     "BIRTH_MUNICIPALITY_NAME": "",
     "ISSUE_DATE": "",
-    "EXPIRY_DATE":"",
-    "ISSUE_PLACE":"",
+    "EXPIRY_DATE": "",
+    "ISSUE_PLACE": "",
     "RESIDENCE_COUNTRY_NAME": "",
-    "RESIDENCE_PROVINCE_NAME":"",
+    "RESIDENCE_PROVINCE_NAME": "",
     "RESIDENCE_MUNICIPALITY_NAME": "",
     "RESIDENCE_COMMUNE_NAME": "",
-    "RESIDENCE_NEIGHBOR":"",
+    "RESIDENCE_NEIGHBOR": "",
     "RESIDENCE_ADDRESS": "",
 }
-
 ```
-</td>
-<td>
+
+`On Error`
 
 ```json
 {
     False
 }
-
 ```
-</td>
-</tr>
-</table>
-
 
 ### **NIF**
 
-- 
+| Method | Endpoint |
+| :---: | :---: |
+| `GET` | `https://ka6xhw.deta.dev/nif/{nif}` |
 
-|Method|Endpoint        |
-|------|----------------|
-|`GET` |`https://ka6xhw.deta.dev/nif/{nif}`|
-
-<br>
-
-<table>
-<tr>
-<th>On Success</th>
-<th>On Error</th>
-</tr>
-<tr>
-<td>
+`On Success`
 
 ```json
 {
     True
 }
 ```
-</td>
-<td>
+
+`On Error`
 
 ```json
 {
     False
 }
-
 ```
-</td>
-</tr>
-</table>
-
-<br>
-<br>
 
 ## **DOCS Swagger UI**
-> https://ka6xhw.deta.dev/docs
 
-> https://ka6xhw.deta.dev/redoc
+- <https://ka6xhw.deta.dev/docs>
+- <https://ka6xhw.deta.dev/redoc>

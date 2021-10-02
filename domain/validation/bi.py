@@ -1,9 +1,6 @@
-from .rules.valid import Rule
+from domain.validation.rules.valid import Rule
 
 class Bi():
-
-    __validate_bi = None
-
     def __init__(self):
         self.__validate_bi = Rule()
 
