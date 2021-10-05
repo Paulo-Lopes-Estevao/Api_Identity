@@ -2,8 +2,18 @@ from fastapi import FastAPI
 from services.http_api.gov.bi import bi_service
 from services.http_api.gov.nif import nif_service
 from domain.validation.bi import Bi
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 valid_bi = Bi()
 service_bi = bi_service()
