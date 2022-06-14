@@ -3,7 +3,7 @@ import services.http_api.point_url as url
 
 class bi_service():
 
-    Q ="/bi/?bi="
+    Q ="/?bi="
 
     def __init__(self):
         self.api_service = http()
